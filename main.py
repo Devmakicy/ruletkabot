@@ -13,7 +13,7 @@ dp = Dispatcher()
 @dp.message(CommandStart())
 async def start(message: types.Message):
     # Замени URL на ссылку своего сайта, куда зальешь код выше
-    web_app_url = "https://твой-хостинг.vercel.app"
+    web_app_url = "https://devmakicy.github.io/ruletka/"
     
     kb = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="🎰 ГАЗОВАТЬ В VISA SPIN", web_app=WebAppInfo(url=web_app_url))]
